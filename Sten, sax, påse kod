@@ -1,0 +1,33 @@
+Sten sax påse kod
+
+import random 
+import os
+import re
+os.system('cls' if os.name=='nt' else 'clear')
+while (1 < 2):
+    print "\n"
+    print "Sten, Sax, Påse - Kör!"
+    userChoice = raw_input("Välj ditt val [St]en], [S]ax, or [P]åse: ")
+    if not re.match("[SsRrPp]", userChoice):
+        print "Välj ett:"
+        print "[St]en], [S]ax, or [P]åse."
+        continue
+    // Echo the user's choice
+    print "Du väljer: " + userChoice
+    choices = ['St', 'S', 'P']
+    opponenetChoice = random.choice(choices)
+    print "Jag valde: " + opponenetChoice
+    if opponenetChoice == str.upper(userChoice):
+        print "Lika! "
+    #if opponenetChoice == str("St") and str.upper(userChoice) == "P"
+    elif opponenetChoice == 'St' and userChoice.upper() == 'S':      
+        print "Sten vinna påse, Du vin! "
+        continue
+    elif opponenetChoice == 'S' and userChoice.upper() == 'P':      
+        print "Sax vinna påse ! Du vin! "
+        continue
+    elif opponenetChoice == 'P' and userChoice.upper() == 'St':      
+        print "Påse vinna Sten !, Du vin! "
+        continue
+    else:       
+        print "Du vin!"
