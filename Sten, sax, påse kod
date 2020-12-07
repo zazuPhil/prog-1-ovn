@@ -15,19 +15,3 @@ while (1 < 2):
     // Echo the user's choice
     print "Du väljer: " + userChoice
     choices = ['St', 'S', 'P']
-    opponenetChoice = random.choice(choices)
-    print "Jag valde: " + opponenetChoice
-    if opponenetChoice == str.upper(userChoice):
-        print "Lika! "
-    #if opponenetChoice == str("St") and str.upper(userChoice) == "P"
-    elif opponenetChoice == 'St' and userChoice.upper() == 'S':      
-        print "Sten vinna påse, Du vin! "
-        continue
-    elif opponenetChoice == 'S' and userChoice.upper() == 'P':      
-        print "Sax vinna påse ! Du vin! "
-        continue
-    elif opponenetChoice == 'P' and userChoice.upper() == 'St':      
-        print "Påse vinna Sten !, Du vin! "
-        continue
-    else:       
-        print "Du vin!"
